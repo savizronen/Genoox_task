@@ -1,0 +1,26 @@
+2023-08-03 21:59:58,168 INFO   (MainThread) (__init__) =================== Start ===================
+2023-08-03 21:59:58,169 DEBUG  (MainThread) (__init__) ========= SETTINGS =========
+2023-08-03 21:59:58,169 DEBUG  (MainThread) (__init__) Global start_position = None
+2023-08-03 21:59:58,169 DEBUG  (MainThread) (__init__) Global end_position = None
+2023-08-03 21:59:58,169 DEBUG  (MainThread) (__init__) Global min_DP = 10
+2023-08-03 21:59:58,169 DEBUG  (MainThread) (__init__) Global limit_per_sample = 9
+2023-08-03 21:59:58,169 DEBUG  (MainThread) (__init__) Global state_db = None
+2023-08-03 21:59:58,169 DEBUG  (MainThread) (__init__) Logger LogMode = 10
+2023-08-03 21:59:58,170 DEBUG  (MainThread) (__init__) Logger maxBytes = 20971520
+2023-08-03 21:59:58,170 DEBUG  (MainThread) (__init__) Logger backupCount = 100
+2023-08-03 21:59:58,170 DEBUG  (MainThread) (__init__) Logger encoding = utf-8
+2023-08-03 21:59:58,170 DEBUG  (MainThread) (__init__) Logger ActivityLogFormat = %(asctime)s|(%(threadName)-2s)|%(message)s
+2023-08-03 21:59:58,170 DEBUG  (MainThread) (__init__) Logger LogFormat = %(asctime)s %(levelname)-6s (%(threadName)-2s) (%(funcName)-2s) %(message)s
+2023-08-03 21:59:58,170 INFO   (MainThread) (screen) #################################### url: https://resources.genoox.com.s3.amazonaws.com/homeAssingment/demo_vcf_multisample.vcf.gz
+2023-08-03 21:59:58,170 INFO   (MainThread) (screen) Download the filehttps://resources.genoox.com.s3.amazonaws.com/homeAssingment/demo_vcf_multisample.vcf.gz
+2023-08-03 22:00:02,483 INFO   (MainThread) (screen) filename: demo_vcf_multisample.vcf.gz
+2023-08-03 22:00:02,509 INFO   (MainThread) (parse) start_time: 1691089202.5092711
+2023-08-03 22:00:02,509 INFO   (MainThread) (parse) input_vcf_file: demo_vcf_multisample.vcf.gz
+2023-08-03 22:00:02,509 INFO   (MainThread) (screen) ############################################
+2023-08-03 22:00:02,509 INFO   (MainThread) (screen) start_position: None
+2023-08-03 22:00:02,509 INFO   (MainThread) (screen) end_position: None
+2023-08-03 22:00:02,509 INFO   (MainThread) (screen) min_DP: 10
+2023-08-03 22:00:02,509 INFO   (MainThread) (screen) limit_per_sample: 9
+2023-08-03 22:00:02,509 INFO   (MainThread) (screen) ############################################
+2023-08-03 22:00:02,509 INFO   (MainThread) (screen) Open file: demo_vcf_multisample.vcf.gz and parse in parallel with workers 5  ;-)
+2023-08-03 22:00:02,522 INFO   (MainThread) (screen) Here is my samples: ['father', 'mother', 'proband']

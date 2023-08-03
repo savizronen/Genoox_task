@@ -1,0 +1,22 @@
+# Global configuration
+Global:
+  start_position: null
+  end_position: null
+  min_DP: 10
+  limit_per_sample: 9
+  state_db: null
+
+Logger:
+  LogMode: 10
+  # CRITICAL = 50
+  # FATAL = CRITICAL
+  # ERROR = 40
+  # WARNING = 30
+  # INFO = 20
+  # DEBUG = 10
+  # NOTSET = 0
+  maxBytes: 20971520 # 20 MB
+  backupCount: 100
+  encoding: 'utf-8'
+  ActivityLogFormat: '%(asctime)s|(%(threadName)-2s)|%(message)s'
+  LogFormat: '%(asctime)s %(levelname)-6s (%(threadName)-2s) (%(funcName)-2s) %(message)s'

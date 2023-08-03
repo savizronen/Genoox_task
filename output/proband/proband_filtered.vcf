@@ -1,0 +1,120 @@
+##fileformat=VCFv4.2
+##FILTER=<ID=PASS,Description="All filters passed">
+##FORMAT=<ID=AD,Number=.,Type=Integer,Description="Allelic depths for the ref and alt alleles in the order listed">
+##FORMAT=<ID=DP,Number=1,Type=Integer,Description="Approximate read depth (reads with MQ=255 or with bad mates are filtered)">
+##FORMAT=<ID=GQ,Number=1,Type=Integer,Description="Genotype Quality">
+##FORMAT=<ID=GT,Number=1,Type=String,Description="Genotype">
+##FORMAT=<ID=PL,Number=G,Type=Integer,Description="Normalized, Phred-scaled likelihoods for genotypes as defined in the VCF specification">
+##FORMAT=<ID=SB,Number=4,Type=Integer,Description="Per-sample component statistics which comprise the Fisher's Exact Test to detect strand bias.">
+##FORMAT=<ID=AF,Number=1,Type=Float,Description="Allelic frequency for alt alleles in the order listed">
+##DRAGENCommandLine=<ID=dragen,Date="Tue Jun 26 17:13:51 CST 2018",CommandLineOptions=" --force --enable-bam-indexing=true --output-format=bam --enable-map-align-output=true --enable-sort=true --enable-duplicate-marking=true --enable-variant-caller=true --ref-dir=/hwfssz1/ST_MCHRI/CLINIC/USERS/zhangtongda/old_dir/23.zhangtongda/db/edico_ref/edico_ref_v6/ --vc-reference=/hwfssz1/ST_MCHRI/CLINIC/USERS/zhangtongda/old_dir/23.zhangtongda/db/edico_ref/hg19.fasta --fastq-file1=/ldfssz2/zebra_bgiseq500/zebra01/F16ZQSB1SY3007_Temp/CL100076080_L01/CL100076080_L01_read_1.fq.gz --fastq-file2=/ldfssz2/zebra_bgiseq500/zebra01/F16ZQSB1SY3007_Temp/CL100076080_L01/CL100076080_L01_read_2.fq.gz --vc-sample-name=SZCH0905f --output-directory=/hwfssz1/ST_MCHRI/CLINIC/PMO/F16ZQSB1SY3007/NEW_Batch_WGS2//out//SZCH0905f/ --output-file-prefix=SZCH0905f --RGID=SZCH0905f_CL100076080_L01 --RGLB=CL100076080_L01 --RGSM=SZCH0905f --RGPL=COMPLETE --RGCN=BGI --intermediate-results-dir=/hwfssz1/ST_MCHRI/CLINIC/PMO/F16ZQSB1SY3007/NEW_Batch_WGS2//out//SZCH0905f/">
+##DRAGENVersion=<ID=dragen,Version="SW: 01.011.231.02.05.01.40152, HW: 01.011.231">
+##INFO=<ID=AC,Number=A,Type=Integer,Description="Allele count in genotypes, for each ALT allele, in the same order as listed">
+##INFO=<ID=AF,Number=A,Type=Float,Description="Allele Frequency, for each ALT allele, in the same order as listed">
+##INFO=<ID=AN,Number=1,Type=Integer,Description="Total number of alleles in called genotypes">
+##INFO=<ID=DP,Number=1,Type=Integer,Description="Approximate read depth; some reads may have been filtered">
+##INFO=<ID=FS,Number=1,Type=Float,Description="Phred-scaled p-value using Fisher's exact test to detect strand bias">
+##INFO=<ID=MQ,Number=1,Type=Float,Description="RMS Mapping Quality">
+##INFO=<ID=MQRankSum,Number=1,Type=Float,Description="Z-score From Wilcoxon rank sum test of Alt vs. Ref read mapping qualities">
+##INFO=<ID=QD,Number=1,Type=Float,Description="Variant Confidence/Quality by Depth">
+##INFO=<ID=ReadPosRankSum,Number=1,Type=Float,Description="Z-score from Wilcoxon rank sum test of Alt vs. Ref read position bias">
+##INFO=<ID=SOR,Number=1,Type=Float,Description="Symmetric Odds Ratio of 2x2 contingency table to detect strand bias">
+##INFO=<ID=FractionInformativeReads,Number=1,Type=Float,Description="The fraction of informative reads out of the total reads">
+##INFO=<ID=DB,Number=0,Type=Flag,Description="dbSNP Membership">
+##contig=<ID=chr1,length=249250621>
+##contig=<ID=chr2,length=243199373>
+##contig=<ID=chr3,length=198022430>
+##contig=<ID=chr4,length=191154276>
+##contig=<ID=chr5,length=180915260>
+##contig=<ID=chr6,length=171115067>
+##contig=<ID=chr7,length=159138663>
+##contig=<ID=chr8,length=146364022>
+##contig=<ID=chr9,length=141213431>
+##contig=<ID=chr10,length=135534747>
+##contig=<ID=chr11,length=135006516>
+##contig=<ID=chr12,length=133851895>
+##contig=<ID=chr13,length=115169878>
+##contig=<ID=chr14,length=107349540>
+##contig=<ID=chr15,length=102531392>
+##contig=<ID=chr16,length=90354753>
+##contig=<ID=chr17,length=81195210>
+##contig=<ID=chr18,length=78077248>
+##contig=<ID=chr19,length=59128983>
+##contig=<ID=chr20,length=63025520>
+##contig=<ID=chr21,length=48129895>
+##contig=<ID=chr22,length=51304566>
+##contig=<ID=chrX,length=155270560>
+##contig=<ID=chrY,length=59373566>
+##contig=<ID=chrM_NC_012920.1,length=16569>
+##contig=<ID=chr11_gl000202_random,length=40103>
+##contig=<ID=chr17_gl000203_random,length=37498>
+##contig=<ID=chr17_gl000204_random,length=81310>
+##contig=<ID=chr17_gl000205_random,length=174588>
+##contig=<ID=chr17_gl000206_random,length=41001>
+##contig=<ID=chr18_gl000207_random,length=4262>
+##contig=<ID=chr19_gl000208_random,length=92689>
+##contig=<ID=chr19_gl000209_random,length=159169>
+##contig=<ID=chr1_gl000191_random,length=106433>
+##contig=<ID=chr1_gl000192_random,length=547496>
+##contig=<ID=chr21_gl000210_random,length=27682>
+##contig=<ID=chr4_gl000193_random,length=189789>
+##contig=<ID=chr4_gl000194_random,length=191469>
+##contig=<ID=chr7_gl000195_random,length=182896>
+##contig=<ID=chr8_gl000196_random,length=38914>
+##contig=<ID=chr8_gl000197_random,length=37175>
+##contig=<ID=chr9_gl000198_random,length=90085>
+##contig=<ID=chr9_gl000199_random,length=169874>
+##contig=<ID=chr9_gl000200_random,length=187035>
+##contig=<ID=chr9_gl000201_random,length=36148>
+##contig=<ID=chrUn_gl000211,length=166566>
+##contig=<ID=chrUn_gl000212,length=186858>
+##contig=<ID=chrUn_gl000213,length=164239>
+##contig=<ID=chrUn_gl000214,length=137718>
+##contig=<ID=chrUn_gl000215,length=172545>
+##contig=<ID=chrUn_gl000216,length=172294>
+##contig=<ID=chrUn_gl000217,length=172149>
+##contig=<ID=chrUn_gl000218,length=161147>
+##contig=<ID=chrUn_gl000219,length=179198>
+##contig=<ID=chrUn_gl000220,length=161802>
+##contig=<ID=chrUn_gl000221,length=155397>
+##contig=<ID=chrUn_gl000222,length=186861>
+##contig=<ID=chrUn_gl000223,length=180455>
+##contig=<ID=chrUn_gl000224,length=179693>
+##contig=<ID=chrUn_gl000225,length=211173>
+##contig=<ID=chrUn_gl000226,length=15008>
+##contig=<ID=chrUn_gl000227,length=128374>
+##contig=<ID=chrUn_gl000228,length=129120>
+##contig=<ID=chrUn_gl000229,length=19913>
+##contig=<ID=chrUn_gl000230,length=43691>
+##contig=<ID=chrUn_gl000231,length=27386>
+##contig=<ID=chrUn_gl000232,length=40652>
+##contig=<ID=chrUn_gl000233,length=45941>
+##contig=<ID=chrUn_gl000234,length=40531>
+##contig=<ID=chrUn_gl000235,length=34474>
+##contig=<ID=chrUn_gl000236,length=41934>
+##contig=<ID=chrUn_gl000237,length=45867>
+##contig=<ID=chrUn_gl000238,length=39939>
+##contig=<ID=chrUn_gl000239,length=33824>
+##contig=<ID=chrUn_gl000240,length=41933>
+##contig=<ID=chrUn_gl000241,length=42152>
+##contig=<ID=chrUn_gl000242,length=43523>
+##contig=<ID=chrUn_gl000243,length=43341>
+##contig=<ID=chrUn_gl000244,length=39929>
+##contig=<ID=chrUn_gl000245,length=36651>
+##contig=<ID=chrUn_gl000246,length=38154>
+##contig=<ID=chrUn_gl000247,length=36422>
+##contig=<ID=chrUn_gl000248,length=39786>
+##contig=<ID=chrUn_gl000249,length=38502>
+##reference=file:///hw1/CLINIC/USERS/z/old_dir/23/db/ref/ref_v6/reference.bin
+##bcftools_mergeVersion=1.4+htslib-1.4
+##bcftools_viewVersion=1.4+htslib-1.4
+##contig=<ID=chr12,length=133851895>
+chrY	2759997	.	T	C	127.69	.	FS=15.441;MQ=48.68;MQRankSum=-2.017;QD=9.12;ReadPosRankSum=0;SOR=3.22;FractionInformativeReads=0.571;DP=14;AF=0.5;AN=2;AC=1;GENE=RPS4Y1<>ZFY;CLASSIFICATION=BENIGN	GT:AD:AF:DP:GQ:PL:SB	0/1:4,4:0.5:8:99:156,0,156:4,0,0,4	./.:.:.:.:.:.:.	0/1:4,4:0.5:8:99:156,0,156:4,0,0,4
+chrY	2760000	.	A	G	127.69	.	FS=15.441;MQ=48.68;MQRankSum=-2.017;QD=9.12;ReadPosRankSum=0;SOR=3.22;FractionInformativeReads=0.571;DP=14;AF=0.5;AN=2;AC=1;GENE=RPS4Y1<>ZFY;CLASSIFICATION=BENIGN	GT:AD:AF:DP:GQ:PL:SB	0/1:4,4:0.5:8:99:156,0,156:4,0,0,4	./.:.:.:.:.:.:.	0/1:4,4:0.5:8:99:156,0,156:4,0,0,4
+chrX	60072	.	G	T	406.46	.	FS=20.959;MQ=59.28;MQRankSum=-0.042;QD=11.29;ReadPosRankSum=-0.753;SOR=1.404;FractionInformativeReads=0.833;DP=36;AF=0.5;AN=2;AC=1;GENE=CHR_START<>PLCXD1;CLASSIFICATION=BENIGN	GT:AD:AF:DP:GQ:PL:SB	./.:.:.:.:.:.:.	./.:.:.:.:.:.:.	0/1:17,13:0.433:30:99:435,0,530:14,3,4,9
+chrX	60215	.	A	C	535.11	.	FS=8.08;MQ=60;MQRankSum=0.296;QD=15.61;ReadPosRankSum=1.443;SOR=1.018;FractionInformativeReads=0.969;DP=76;AF=0.5;AN=4;AC=2;GENE=CHR_START<>PLCXD1;CLASSIFICATION=BENIGN	GT:AD:AF:DP:GQ:PL:SB	./.:.:.:.:.:.:.	0/1:15,16:0.516:31:99:528,0,448:10,5,6,10	0/1:21,19:0.475:40:99:563,0,682:13,8,10,9
+chrX	60336	.	G	A	538.4	.	FS=3.176;MQ=60;MQRankSum=0.035;QD=14.06;ReadPosRankSum=0.035;SOR=1.044;FractionInformativeReads=0.971;DP=71;AF=0.5;AN=4;AC=2;GENE=CHR_START<>PLCXD1;CLASSIFICATION=BENIGN	GT:AD:AF:DP:GQ:PL:SB	./.:.:.:.:.:.:.	0/1:21,13:0.382:34:99:520,0,834:9,12,8,5	0/1:21,15:0.417:36:99:567,0,837:12,9,7,8
+chrX	60337	.	C	T	538.4	.	FS=5.287;MQ=60;MQRankSum=-0.577;QD=14.06;ReadPosRankSum=0.262;SOR=1.181;FractionInformativeReads=0.971;DP=71;AF=0.5;AN=4;AC=2;GENE=CHR_START<>PLCXD1;CLASSIFICATION=BENIGN	GT:AD:AF:DP:GQ:PL:SB	./.:.:.:.:.:.:.	0/1:20,14:0.412:34:99:520,0,834:8,12,9,5	0/1:21,15:0.417:36:99:567,0,837:12,9,7,8
+chrX	60425	.	C	A	571.15	.	FS=4.677;MQ=60;MQRankSum=-0.632;QD=14.64;ReadPosRankSum=-1.307;SOR=1.358;FractionInformativeReads=1;DP=73;AF=0.5;AN=4;AC=2;GENE=CHR_START<>PLCXD1;CLASSIFICATION=BENIGN	GT:AD:AF:DP:GQ:PL:SB	./.:.:.:.:.:.:.	0/1:19,20:0.513:39:99:599,0,624:9,10,13,7	1/1:22,12:0.353:34:99:348,0,728:9,13,8,4
+chrX	60454	.	A	G	702.4	.	FS=1.219;MQ=60;MQRankSum=1.002;QD=17.56;ReadPosRankSum=0.731;SOR=0.941;FractionInformativeReads=1;DP=72;AF=0.5;AN=4;AC=2;GENE=CHR_START<>PLCXD1;CLASSIFICATION=BENIGN	GT:AD:AF:DP:GQ:PL:SB	./.:.:.:.:.:.:.	0/1:21,19:0.475:40:99:731,0,744:12,9,12,7	1/1:18,14:0.438:32:99:528,0,763:6,12,8,6
+chrX	76667	.	A	T	62.97	.	FS=0;MQ=40.8;MQRankSum=-0.72;QD=10.5;ReadPosRankSum=0.72;SOR=1.329;FractionInformativeReads=1;DP=6;AF=0.5;AN=2;AC=1;GENE=CHR_START<>PLCXD1;CLASSIFICATION=BENIGN	GT:AD:AF:DP:GQ:PL:SB	0/1:2,4:0.667:6:63:91,0,63:0,2,0,4	./.:.:.:.:.:.:.	1/1:2,4:0.667:6:63:91,0,63:0,2,0,4
